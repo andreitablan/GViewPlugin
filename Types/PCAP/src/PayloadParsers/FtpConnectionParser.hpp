@@ -14,3 +14,4 @@ struct FTPConnectionParser : public PayloadDataParserInterface {
     PayloadDataParserInterface* ParsePayload(const PayloadInformation& payloadInformation, ConnectionCallbackInterface* callbackInterface) override;
 };
 } // namespace GView::Type::PCAP::FTP
+

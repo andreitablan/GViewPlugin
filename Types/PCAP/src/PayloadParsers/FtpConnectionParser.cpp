@@ -14,3 +14,4 @@ PayloadDataParserInterface* FTPConnectionParser::FTPConnectionParser::ParsePaylo
     callbackInterface->AddConnectionAppLayerName("FTPConnection");
     return this;
 }
+
