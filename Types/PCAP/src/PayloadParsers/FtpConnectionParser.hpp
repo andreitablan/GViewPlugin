@@ -2,12 +2,13 @@
 
 #include "API.hpp"
 
-namespace GView::Type::PCAP::FTP
+namespace GView::Type::PCAP::FTPConnectionParser
 {
-struct FTPParser : public PayloadDataParserInterface {
+
+struct FTPConnectionParser : public PayloadDataParserInterface {
     std::string GetProtocolName() const override
     {
-        return "FTP";
+        return "FTPConnection";
     }
 
     PayloadDataParserInterface* ParsePayload(const PayloadInformation& payloadInformation, ConnectionCallbackInterface* callbackInterface) override;
